@@ -16,7 +16,7 @@ html{
     box-sizing: inherit;
 }
 body{
-    font-family: var(--fuenteParrafos);
+    font-family: var(--fuenteHeading);
     font-size: 1.6rem;
     height: 2;
 }
@@ -171,12 +171,17 @@ img{
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 2rem;
+    border: none;
 }
 @media (min-width: 768px) {
     .btn{
         display: inline-block;
     }
 }
+.btn:hover{
+    cursor: pointer;
+}
+
 .btn--primary{
     background-color: var(--negro);
 }
@@ -270,4 +275,38 @@ img{
 
 .curso__informacion{
     text-align: justify;
+}
+
+/*Contacto*/
+
+.contacto-fondo{
+    background-image: url(../img/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+}
+.formulario{
+    background-color: var(--blanco);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+}
+
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+.campo__label{
+    flex: 0 0 9rem;
+    text-align: right;
+}
+
+.campo__field{
+    flex: 1;
+    border: 1px solid var(--gris);
+    height: 3.5rem;
+}
+
+.campo__field--textArea{
+    height: 20rem;
 }
